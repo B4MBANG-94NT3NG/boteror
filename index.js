@@ -5099,7 +5099,7 @@ case 'bass':
 							.save(ran)
 							} else {
 						reply(`Kirim gambar dengan caption ${prefix}sticker atau reply/tag gambar`)
-					}
+					})
 					break  
 					
 
