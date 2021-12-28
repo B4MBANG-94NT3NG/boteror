@@ -3797,7 +3797,7 @@ enamdelapan = fs.readFileSync('./mp3/Masih.mp3');
 Bambang.sendMessage(from, enamdelapan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
                  case 'ganteng':
-					if (!isGroup) return reply(ind.groupo())
+					if (!isGroup) return reply(mess.only.groupo())
 					membr = []
 					const nus = groupMembers
 					const msl = groupMembers
@@ -3809,7 +3809,7 @@ break
 					break
                     case 'beban':
 					  
-					if (!isGroup) return reply(ind.groupo())
+					if (!isGroup) return reply(mess.only.groupo())
 					membr = []
 					const met = groupMembers
 					const msd = groupMembers
@@ -3821,7 +3821,7 @@ break
 					break
                     case 'cantik':
 					  
-					if (!isGroup) return reply(ind.groupo())
+					if (!isGroup) return reply(mess.only.groupo())
 					membr = []
 					const meo = groupMembers
 					const msk = groupMembers
@@ -4973,8 +4973,8 @@ case 'bass':
 							.on('error', function (err) {
 								console.log(`Error : ${err}`)
 								fs.unlinkSync(media)
-								reply(ind.stikga())
-							})
+								reply(mess.erorr.stick)
+							}
 							.on('end', function () {
 								console.log('Succes Gan')
 								buffer = fs.readFileSync(ran)
@@ -5059,7 +5059,7 @@ case 'bass':
 							.on('error', function (err) {
 								console.log(`Error : ${err}`)
 								fs.unlinkSync(media)
-								reply(mess.stick)
+								reply(mess.erorr.stick)
 							})
 							.on('end', function () {
 								console.log('Subrek Fernamek')
