@@ -4998,7 +4998,7 @@ case 'bass':
 								console.log(`Error : ${err}`)
 								fs.unlinkSync(media)
 								tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-								reply(ind.stikga())
+								reply(mess.erorr.stick())
 							})
 							.on('end', function () {
 								console.log('Finish')
@@ -5085,7 +5085,7 @@ case 'bass':
 								console.log(`Error : ${err}`)
 								fs.unlinkSync(media)
 								tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-								reply(ind.stikga())
+								reply(mess.erorr.stick())
 							})
 							.on('end', function () {
 								console.log('Finish')
