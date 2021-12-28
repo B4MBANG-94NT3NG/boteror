@@ -4892,7 +4892,7 @@ case 'bass':
                mediaaa = await Bambang.downloadAndSaveMediaMessage(encmediaaa)
                a = await webp2gifFile(mediaaa)
                mp4 = await getBuffer(a.result)
-               Bambang.sendMessage(from, mp4, video, {mimetype: 'video/mp4', quoted: mek, caption: mess.success})
+               Bambang.sendMessage(from, mp4, video, {mimetype: 'video/mp4', quoted: mek, caption: 'sukses'})
                fs.unlinkSync(mediaaa)
                } else {
                reply(mess.wrongFormat)
@@ -5037,7 +5037,7 @@ case 'bass':
                mediaaa = await Bambang.downloadAndSaveMediaMessage(encmediaaa)
                a = await webp2gifFile(mediaaa)
                mp4 = await getBuffer(a.result)
-               Bambang.sendMessage(from, mp4, video, {mimetype: 'video/gif', quoted: mek, caption: mess.success})
+               Bambang.sendMessage(from, mp4, video, {mimetype: 'video/gif', quoted: mek, caption: 'sukses'})
                fs.unlinkSync(mediaaa)
                } else {
                reply(mess.wrongFormat)
